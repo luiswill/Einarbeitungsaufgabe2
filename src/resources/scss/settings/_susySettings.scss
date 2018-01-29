@@ -1,0 +1,16 @@
+$grid-columns: 12 !default;
+$grid-gutter: 30px !default;
+$half-grid-gutter: $grid-gutter / 2 !default;
+$grid-column-width: 120px !default;
+$grid-max-width: $content-max-width !default;
+
+// set susy defaults
+$susy: (
+	math: fluid,
+	columns: $grid-columns,
+	column-width: $grid-column-width,
+	container: $grid-max-width,
+	gutter: $grid-gutter/$grid-column-width,
+	gutter-position: inside-static,
+	global-box-sizing: border-box
+);

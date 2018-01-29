@@ -1,0 +1,82 @@
+@import '../../../resources/scss/settings/defaultImport';
+
+$colorText: #323C46 !default;
+$colorArrowDown: #EB780A !default;
+$headlineH2: #96A0AA !default;
+
+.factsAndFigures {
+
+	&__row {
+
+		@include breakpoint($medium) {
+			display: flex;
+		}
+	}
+
+	&__headline {
+		@include span(12);
+		color: $headlineH2;
+	}
+
+	&__col {
+		@include span(12);
+
+		@media screen and (min-width: $medium) {
+			@include span(4);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+
+	&__intro:first-child, &__figure:first-child {
+		margin-top: 15px;
+	}
+
+	&__figure, &__intro {
+		color: $colorText;
+	}
+
+	&__figure {
+		width: 100%;
+		border-top: 1px solid black;
+		padding-top: 15px;
+
+
+		@media screen and (min-width: $medium) {
+			object-fit: fill;
+		}
+
+		&--onlyMobile {
+			@include breakpoint($medium) {
+				display: none;
+			}
+		}
+
+		&--onlyMedium {
+			display: none;
+			@include breakpoint($medium) {
+				display: block;
+			}
+		}
+
+		&--mobileAndMedium {
+			display: block;
+		}
+	}
+
+	&__arrowDown {
+		position: absolute;
+		top: 0;
+		left: 15px; /* Firefox and IE needs that 15px */
+		border-right: 10px solid transparent;
+		border-left: 10px solid transparent;
+		border-top: 10px solid #EB780A;
+		width: 0;
+		height: 0;
+	}
+
+	&__relative {
+		position: relative;
+	}
+}

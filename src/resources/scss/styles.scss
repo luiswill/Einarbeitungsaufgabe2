@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@import "settings/defaultImport";
+
+/* fonts */
+@import "fonts/fonts";
+@import "../../../.iconfont/iconStyles";
+@import "../../../.iconfont/icons";
+
+/* layout */
+@import "layouts/default";
+@import "layouts/section";
+@import "layouts/grid";
+@import "../../../src/components/framework/navigation/css/navigation";
+@import "../../../src/components/framework/header/css/header";
+@import "../../../src/components/framework/footer/css/footer";
+
+/* base styles */
+@import "base/margins";
+@import "base/types";
+
+/* elements */
+//@import "../../components/factsAndFigures/css/factsAndFigures";
+//@import "../../components/headlineH2/css/headline.h2";
+//@import "../../components/image/css/image";
+//@import "../../components/text/css/text";
+//@import "../../components/accordion/css/_accordion";

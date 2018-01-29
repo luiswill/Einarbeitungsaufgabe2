@@ -1,0 +1,29 @@
+<!-- DEV-NOTES:
+	Component :   TextAndImageBackground
+	Role : 		  A generic component of a image in background and text in cols
+	Variables :   None
+	Author:       Luis Willnat
+	Date: 	      24.01.18
+-->
+
+<div class="textAndImageBackground component"
+	 data-resources="[{paths: ['components/textAndImageBackground/css/textAndImageBackground.css', 'components/textAndImageBackground/js/goTopAnimationButton.js']}]">
+
+	<div class="textAndImageBackground__row">
+		<div class="textAndImageBackground__col">
+			<h2 class="textAndImageBackground__headline">{{data.components.textAndImageBackground.scaffolding.textAndImageBackground.textAndImageBackgroundHeadline}}</h2>
+		</div>
+	</div>
+
+	<div class="textAndImageBackground__row">
+		{{#each data.components.textAndImageBackground.scaffolding.textAndImageBackground.textAndImageBackgroundText}}
+			<div class="textAndImageBackground__textColumn">
+				<p class="textAndImageBackground__text">
+					{{ this.textAndImageBackgroundContent }}
+				</p>
+			</div>
+		{{/each}}
+
+	</div>
+	<button class="textAndImageBackground__goTopButton"><span class="textAndImageBackground__arrowGoTopPage"></span>Top</button>
+</div>

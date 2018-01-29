@@ -1,0 +1,21 @@
+{
+	"navigationItems":
+		[
+			{
+				"navigationHref": "#",
+				"navigationText": "The CEO* Program"
+			},
+			{
+				"navigationHref": "#",
+				"navigationText": "About Siemens "
+			},
+			{
+				"navigationHref": "#",
+				"navigationText": "Your application"
+			},
+			{
+				"navigationHref": "#",
+				"navigationText": "Contact & FAQ"
+			}
+		]
+}

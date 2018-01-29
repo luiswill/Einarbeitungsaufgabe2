@@ -1,0 +1,33 @@
+<!-- DEV-NOTES:
+	Component :   Accordion
+	Role : 		  Accordion filled with a json file of text and images
+	Variables :   None
+	Author:       Luis Willnat
+	Date: 	      24.01.18
+-->
+
+<div class="accordion component hiddenOnLoad"
+	 data-resources="[{paths: ['components/accordion/js/jquery.mobileAccordion.js', 'components/accordion/css/accordion.css']}]"
+	 data-init="(function($elmt){$elmt.accordion()})"
+>
+	{{#each data.components.accordion.scaffolding.accordionSiemens1.panels }}
+
+		<div class="accordion__block">
+			<div class="accordion__topPart">
+				<h4 class="accordion__headline">{{this.accordionTitle}}  <img class="accordion__arrowGoExternalPage" src="../../resources/img/arrow.png" alt="Go to Page"></h4>
+
+				<p class="accordion__text">
+					{{this.accordionText}}
+					<span class="accordion__arrowBottomLeft"></span>
+				</p>
+			</div>
+
+			<div class="accordion__bottomPart">
+				<h4 class="accordion__headline">{{this.accordionTitle}}</h4>
+				<img class="accordion__image" src="{{this.accordionImageSource}}" alt="{{this.accordionImageAlt}}"/>
+			</div>
+
+			<span class="accordion__arrowTopLeft"></span>
+		</div>
+	{{/each}}
+</div>

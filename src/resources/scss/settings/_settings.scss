@@ -1,0 +1,99 @@
+// GLOBAL SASS SETTINGS
+
+// FONTS
+$font-family-sans-serif: Arial, sans-serif;
+$font-weight-normal:     400;
+$font-weight-bold:       600;
+
+// Z-INDEXES
+//$z-index-component-xyz: 1;
+
+// COLORS
+$white: #fff;
+$black: #000;
+$headlineH2:#96A0AA;
+
+// BODY STYLES
+$body-bg: $white;
+$body-font-color:   $black;
+$body-font-family:  $font-family-sans-serif;
+$body-font-weight:  $font-weight-normal;
+$body-font-style:   normal;
+$body-font-size:    17px;
+$body-line-height:  25px;
+$body-min-width:    300px;
+
+// COMPONENT STYLES
+$content-max-width: 1024px;
+$content-min-width: 320px;
+$component-max-width: 1200px;
+
+// breakpoint definitions
+$xsmall:  300px;
+$small:   600px;
+$medium:  768px;
+$large:   992px;
+$xlarge:  1200px;
+
+// MaxValues
+$xsmallMax: $small - 1;
+$smallMax:  $medium - 1;
+$mediumMax: $large - 1;
+$largeMax:  $xlarge - 1;
+$xlargeMax: 10000px;
+
+// Grid
+$grid-gutter: 30px;
+
+$section_content_top: 33px;
+$section_margin_top_small_screen: 7px;
+$section_margin_top_medium_screen: 60px;
+$section_margin_top_large: 20px;
+$section_margin_top_xlarge: 30px;
+
+$col_margin_right: 40px;
+
+
+// Padding
+$section_padding_top_small: 10px;
+
+$section_padding_top_mobile: 20px;
+$section_padding_bottom_mobile: 20px;
+
+$section_padding_left_medium_screen: 3.96%;
+$section_padding_right_medium_screen: 4.3%;
+$section_padding_top_medium_screen: 50px;
+$section_padding_bottom_medium_screen: 50px;
+
+$section_padding_left_small_screen: 20px;
+$section_padding_right_small_screen: 20px;
+$section_padding_top_small_screen: 20px;
+$section_padding_bottom_small_screen: 20px;
+
+
+$section_margin_small: 40px;
+$section_margin_medium: 60px;
+$section_margin_big: 50px;
+
+
+/* Margin left of cols */
+$marginLeftColumn: 15px;
+
+
+// Headlines
+$headline_font_size_h1: 35px;
+$headline_font_size_h2: 28px;
+$headline_font_size_h3: 23px;
+$headline_font_size_h4: 18px;
+$headline_font_size_h5: 17px;
+$headline_font_size_h6: 16px;
+
+
+// Paragraph
+$paragraph_margin_bottom_small_screen: 15px;
+$paragraph_margin_bottom_medium_screen: 25px;
+
+
+// FOOTER
+$footer_font_size_mobile: 11px;
+$footer_font_size_desktop: 11px;

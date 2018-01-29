@@ -1,0 +1,37 @@
+@import '../../../resources/scss/settings/defaultImport';
+
+
+.navigationRightCorner nav {
+	display: none;
+
+	@include breakpoint($medium) {
+
+		position: absolute;
+		right: 0;
+		display: block;
+		background-color: #475059;
+		opacity: 0.9;
+		z-index: 15;
+
+		ul {
+			margin: 10px 40px 7px 18px;
+			padding: 0;
+
+			li {
+				list-style-type: none;
+				line-height: 21px;
+
+				a {
+					color: #77818B;
+					font-family: 'Arial', sans-serif;
+					font-size: 14px;
+					text-decoration: none;
+
+					&:hover {
+						color: #F58C14;
+					}
+				}
+			}
+		}
+	}
+}

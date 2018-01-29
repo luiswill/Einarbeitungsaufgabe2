@@ -1,0 +1,15 @@
+{
+	"textAndImageBackgroundHeadline":"A chance to excel. A chance to make a difference",
+	"textAndImageBackgroundBackgroundImage":{
+		"textAndImageBackgroundImageSource":"../../../_assets/Page2_Modul3_BGimage_1024-1200.jpg",
+		"textAndImageBackgroundImageAlt":"Background Image"
+	},
+	"textAndImageBackgroundText":[
+		{
+			"textAndImageBackgroundContent":"Qui cum venisset ob haec festinatis itineribus Antiochiam, praestrictis palatii ianuis, contempto Caesare, quem videri decuerat, ad praetorium cum pompa sollemni perrexit morbosque diu causatus nec r egiam introiit nec processit in publicum, sed abditus multa in eius mol iebatur exitium addens quaedam relationibus supervacua, quas subinde di mittebat ad principem."
+		},
+		{
+			"textAndImageBackgroundContent":"Qui cum venisset ob haec festinatis itineribus Antiochiam, praestrictis palatii ianuis, contempto Caesare, quem videri decuerat, ad praetorium cum pompa sollemni perrexit morbosque diu causatus nec r egiam introiit nec processit in publicum, sed abditus multa in eius mol iebatur exitium addens quaedam relationibus supervacua, quas subinde di mittebat ad principem."
+		}
+	]
+}

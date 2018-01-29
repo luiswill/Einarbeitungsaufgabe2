@@ -1,0 +1,68 @@
+@import '../../../resources/scss/settings/defaultImport';
+
+$colorText: #9EADBE !default;
+$colorHeadline: $headlineH2 !default;
+$colorButton: $white !default;
+
+.textAndImageBackground {
+
+	&__col {
+		@include span(12);
+	}
+
+	&__textColumn {
+		@include span(12);
+
+		@include breakpoint($medium){
+			@include span(4);
+		}
+	}
+
+	&__text {
+		color: $white;
+
+		@include breakpoint($medium) {
+			color: $colorText;
+		}
+	}
+
+	&__headline {
+		color: $white;
+
+		@include breakpoint($medium) {
+			color: $colorHeadline;
+		}
+	}
+
+	&__goTopButton {
+		border: none;
+		background-color: #0f1923;
+		position: absolute;
+		color: $colorButton;
+		padding-left: 35px;
+		padding-right: 10px;
+		padding-bottom: 3px;
+		border-radius: 3px;
+		bottom: 30px;
+		right: 15px;
+		cursor: pointer;
+
+		@include breakpoint($medium) {
+			display: none;
+		}
+	}
+
+
+	&__arrowGoTopPage {
+		border-right: 10px solid transparent;
+		border-left: 10px solid transparent;
+		border-bottom: 10px solid #FFFFFF;
+		width: 0;
+		height: 0;
+		position: absolute;
+		bottom: 7px;
+		right: 43px;
+	}
+
+}
+

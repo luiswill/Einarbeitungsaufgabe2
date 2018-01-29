@@ -1,0 +1,136 @@
+.section {
+	$half-grid-gutter: $grid-gutter / 2;
+
+
+	padding-left: $section_padding_left_small_screen;
+	padding-right: $section_padding_right_small_screen;
+	padding-top: $section_padding_top_small_screen;
+	padding-bottom: $section_padding_bottom_small_screen;
+
+	@media (min-width: $medium) {
+		padding-top: $section_padding_top_medium_screen;
+		padding-bottom: $section_padding_top_medium_screen;
+		padding-left: $section_padding_left_medium_screen;
+		padding-right: $section_padding_right_medium_screen;
+	}
+
+	@media (min-width: $xlarge) {
+		//margin-top: $section_margin_top_xlarge;
+	}
+
+	&--reducedWidth {
+		max-width: $content-max-width;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&--removeTopBottomMargins {
+		margin:0;
+		padding: 0;
+	}
+
+	&--removeComponentExtraPadding {
+		margin-left: -$marginLeftColumn;
+		margin-right: -$marginLeftColumn;
+	}
+
+	&--relative {
+		position: relative;
+	}
+
+
+	&:not([class*="section--colorTheme"]) {
+		+ [class*="section--colorTheme"] {
+			//margin-top: $section_margin_top_small_screen;
+            //
+			//@media (min-width: $medium) {
+			//	margin-top: $section_margin_top_medium_screen;
+			//}
+            //
+			//@media (min-width: $xlarge) {
+			//	margin-top: $section_margin_top_xlarge;
+			//}
+		}
+	}
+
+	&[class*="section--colorTheme"] {
+		margin-top: 0;
+		// We want every section align on the left
+		//padding: $section_padding_top_small 6.75% $section_margin_top_small 6.25%;
+        //
+		//@include breakpoint($medium) {
+		//	padding-top: $section_margin_top_medium_screen;
+		//	padding-bottom: $section_margin_top_medium_screen;
+		//	padding-left: $section_padding_left_medium_screen;
+		//	padding-right: $section_padding_right_medium_screen;
+		//}
+        //
+		//@include breakpoint($xlarge) {
+		//	padding: $section_margin_top_xlarge 30px;
+		//}
+
+		> .row {
+			margin-top: 0;
+
+			&:first-of-type {
+				@include breakpoint(max-width $medium - 1) {
+					margin-top: 0;
+				}
+			}
+		}
+
+		> .row--reducedWidth {
+			margin-left: -$half-grid-gutter;
+			margin-right: -$half-grid-gutter;
+
+			@include breakpoint(1500px) {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		&.section--removeSidePaddings {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	&--colorTheme {
+		&1  { background: rgba(51, 51, 51, 0.85); }
+		&2  { background: rgba(102, 102, 102, 0.85); }
+		&3  { background: rgba(153, 153, 153, 0.85); }
+		&4  { background: rgba(204, 204, 204, 0.85); }
+		&5  { background: rgba(229, 229, 229, 0.85);}
+		//&6  { background: rgba(102, 102, 102, 0.85); }
+		&7  { background: rgba(127, 178, 229, 0.85);}
+		&8  { background: rgba(229, 239, 250, 0.85);}
+		&9  { background: rgba(204, 0, 51, 0.85);}
+		&10 { background: rgba(116, 116, 186, 0.85);}
+		&11 { background: rgba(0, 153, 102, 0.85);}
+		&12 { background: rgba(255, 196, 20, 0.85);}
+		&13 {
+			background: rgba(50, 60, 70, 1);
+			& p {
+				color: #C8D2D7;
+			}
+		}
+		&14 {
+			& p {
+				color: #9EADBE;
+
+				@media screen and (min-width: $medium) {
+					padding-bottom: 80px;
+				}
+			}
+		}
+		&15 {
+			background: rgba(255, 255, 255, 1);
+		}
+		&16 {
+			box-shadow: inset 0 15px 27px -9px black;
+			background-image: url("../../../_assets/Page2_Modul3_BGimage_1024-1200.jpg");
+			background-position: center;
+			background-size: cover;
+		}
+	}
+}

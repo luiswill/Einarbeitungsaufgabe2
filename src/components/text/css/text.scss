@@ -1,0 +1,33 @@
+@import "../../../resources/scss/settings/defaultImport";
+
+$paragraph_margin_bottom_small_screen: 10px !default;
+
+.text {
+	padding: 0;
+	margin-bottom: $paragraph_margin_bottom_small_screen;
+
+	@media screen and (min-width: $medium) {
+		margin-bottom: $paragraph_margin_bottom_medium_screen;
+	}
+
+	&:last-child {
+		@media screen and (min-width: $medium) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__divider:after {
+		content: '';
+		width: 100%;
+		height: 1px;
+		display: block;
+		background-color: $white;
+		margin-bottom: $paragraph_margin_bottom_small_screen - 25px;
+	}
+
+	&__justifyContent {
+		text-align: justify;
+	}
+
+}
+

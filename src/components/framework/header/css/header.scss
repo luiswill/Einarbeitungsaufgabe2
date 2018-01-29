@@ -1,0 +1,74 @@
+@import '../../../../resources/scss/settings/defaultImport';
+
+$leftAndRightButtonsHeight: 38px !default;
+
+.header{
+	position: relative;
+
+	&__container {
+		position: relative;
+	}
+
+	&__background {
+		left: 1px;
+		width: 100%;
+		height: auto;
+		max-height: 393px;
+		z-index: 1;
+		transform: scaleX(-1);
+
+		@media screen and (min-width: $medium) {
+			transform: scaleX(1);
+		}
+	}
+
+	&__logo {
+		position: absolute;
+		left: 15%;
+		top: 0;
+		z-index: 3;
+		width: 140px; /* Fixed size */
+		cursor: pointer;
+	}
+
+	&__slideButtons {
+		position: absolute;
+		cursor: pointer;
+		z-index: 16;
+	}
+
+	&__leftSlideButton {
+		top: calc(50% - (78px / 2));
+	}
+
+	&__rightSlideButton {
+		top: calc(50% - (78px / 2));
+		right: 0;
+	}
+
+	&__quoteHeader {
+		@media screen and (min-width: $medium) {
+			position: absolute;
+		}
+	}
+
+	&__text {
+		display: none;
+
+		@media screen and (min-width: $medium) {
+			color: #FFFFFF;
+			font-family: 'Times New Roman', sans-serif;
+			font-weight: normal;
+			font-size: 45px;
+			line-height: 40px;
+			display: inline;
+			position: absolute;
+			bottom: 50px;
+			left: 310px;
+		}
+
+		@media screen and (min-width: $large) {
+			left: 370px;
+		}
+	}
+}

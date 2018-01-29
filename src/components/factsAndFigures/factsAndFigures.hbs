@@ -1,0 +1,36 @@
+<!-- DEV-NOTES:
+	Component :   FactsAndFigures
+	Role : 		  Custom Template for Framework exercice
+	Variables :   None
+	Author:       Luis Willnat
+	Date: 	      24.01.18
+-->
+<div class="factsAndFigures component"
+	data-resources="[{paths: ['components/factsAndFigures/css/factsAndFigures.css']}]">
+	<div class="factsAndFigures__row">
+		<div class="factsAndFigures__headline">
+			<h2>{{ data.components.factsAndFigures.scaffolding.factsAndFigures.headline }}</h2>
+		</div>
+	</div>
+	<div class="factsAndFigures__row">
+		{{#each data.components.factsAndFigures.scaffolding.factsAndFigures.columns}}
+			<div class="factsAndFigures__col">
+				{{#if this.factsAndFiguresIntro }}
+					<p class="factsAndFigures__intro">
+						{{this.factsAndFiguresIntro}}
+					</p>
+				{{/if }}
+
+				{{#each this.factsAndFiguresFigures }}
+					<img class="factsAndFigures__figure {{#if factsAndFiguresFigureIsMobile }} factsAndFigures__figure--onlyMobile {{ else if factsAndFiguresFigureIsMobileAndMedium }} factsAndFigures__figure--mobileAndMedium {{else }} factsAndFigures__figure--onlyMedium {{/if}}" src="{{this.factsAndFiguresFigureSource}}" alt="{{this.factsAndFiguresFigureAlt}}">
+				{{/each}}
+			</div>
+		{{/each}}
+	</div>
+	<div class="factsAndFigures__row">
+		<div class="factsAndFigures__col relative">
+			<button class="buttonMoreFacts onlyMobile ">Explore more facts</button>
+			<span class="factsAndFigures__arrowDown onlyMobile" ></span>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,54 @@
+
+$footer_font_size_mobile : 13px !default;
+$footer_font_size_desktop: 15px !default;
+
+.footer {
+	padding: 10px 5px 7px 5px;
+
+	&__mobileCopyright {
+		font-size: $footer_font_size_mobile;
+		color: #323C46;
+		display: inline;
+
+		@include breakpoint($medium) {
+			display: none;
+		}
+	}
+
+	&__desktopNavigation {
+		display: none;
+
+		ul {
+			@media screen and (min-width: $medium) {
+				margin: 0;
+				padding-left: 15px;
+				display: block;
+			}
+
+			li {
+
+				display: inline-block;
+
+				&:not(:last-child):after{
+				 	content: '|';
+					color: #666666;
+				}
+
+				a {
+					font-size: $footer_font_size_mobile;
+					color: #666666;
+					text-decoration: none;
+					margin-right: 10px;
+
+					@media screen and (min-width: $medium) {
+						font-size: $footer_font_size_desktop;
+					}
+
+					&:after {
+						color: #666666;
+					}
+				}
+			}
+		}
+	}
+}

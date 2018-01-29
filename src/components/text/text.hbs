@@ -1,0 +1,15 @@
+<!-- DEV-NOTES:
+	Component :   Text
+	Role : 		  Custom Template for Framework exercice
+	Variables :   textText => text of the actual component, default otherwise
+	Author:       Luis Willnat
+	Date: 	      24.01.18
+-->
+
+<div class="text component  {{#if textJustifyContent}} text__justifyContent {{/if}} {{#if textDivider}} text__divider{{/if}}"
+	 data-resources="[{paths: ['components/text/css/text.css']}]">
+	<p>
+		{{def textText 'My default text' }}
+	</p>
+</div>
+

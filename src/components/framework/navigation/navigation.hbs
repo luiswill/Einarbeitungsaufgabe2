@@ -1,0 +1,18 @@
+<!-- DEV-NOTES:
+	Component :   Navigation
+	Role : 		  Navigation
+	Variables :   None
+	Author:       Luis Willnat
+	Date: 	      24.01.18
+-->
+
+
+<nav class="navigation">
+	<ul>
+		{{#each data.components.framework.navigation.navigation.navigationItems }}
+			<li class="navigation__element">
+				<a href="{{this.navigationHref}}">{{ this.navigationText }}</a>
+			</li>
+		{{/each}}
+	</ul>
+</nav>

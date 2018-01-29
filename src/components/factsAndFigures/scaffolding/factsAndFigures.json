@@ -1,0 +1,49 @@
+{
+   "headline":"Fast facts and figures",
+   "columns":[
+      {
+         "factsAndFiguresIntro":"Siemens has remained true to the pioneering spirit ignited by our founder, Werner von Siemens,more that n 160 years ago. Each year we push ourselves to do better, discover more and achieve greater things.The proof is in our numbers. Are you interested in joining a fast-paced company? Think you can keep up?",
+         "factsAndFiguresFigures":[
+            {
+               "factsAndFiguresFigureSource":"../../_assets/Info_Grafik1.png",
+               "factsAndFiguresFigureAlt":"Grafik 1",
+               "factsAndFiguresFigureIsMobileAndMedium":"true"
+            },
+            {
+               "factsAndFiguresFigureSource":"../../_assets/Info_Grafik2.png",
+               "factsAndFiguresFigureAlt":"Grafik 2",
+               "factsAndFiguresFigureIsMobileAndMedium":"true"
+            }
+         ]
+      },
+      {
+         "factsAndFiguresFigures":[
+            {
+               "factsAndFiguresFigureSource":"../../_assets/Info_Grafik3.png",
+               "factsAndFiguresFigureAlt":"Grafik3"
+            },
+            {
+               "factsAndFiguresFigureSource":"../../_assets/Info2.png",
+               "factsAndFiguresFigureAlt":"Info 2",
+               "factsAndFiguresFigureIsMobileAndMedium":"true"
+            }
+         ]
+      },
+      {
+         "factsAndFiguresFigures":[
+            {
+               "factsAndFiguresFigureSource":"../../_assets/Info_Grafik5.png",
+               "factsAndFiguresFigureAlt":"Grafik5"
+            },
+            {
+               "factsAndFiguresFigureSource":"../../_assets/Info_Grafik6.png",
+               "factsAndFiguresFigureAlt":"Grafik6"
+            },
+            {
+               "factsAndFiguresFigureSource":"../../_assets/Info_Grafik7.png",
+               "factsAndFiguresFigureAlt":"Grafik7"
+            }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,29 @@
+{
+	"panels": [
+		{
+			"accordionTitle": "Energy Sector",
+			"accordionImageSource": "../../_assets/Page2_Modul%201_Energy_Sector.png",
+			"accordionImageAlt": "Energy sector",
+			"accordionText": "Our Energy Sector is the world´s leading supplier of products,services and solutions for power generation. Its extensive porfoliocomprises highly efficient technologies for theremal powre plants, renewables, power transmission,and for the extraction, processing and transport of oil and gas."
+		},
+		{
+			"accordionTitle": "Industry",
+			"accordionImageSource": "../../_assets/Page2_Modul%201_Industry_Sector.png",
+			"accordionImageAlt": "Industry Sector",
+			"accordionText" : "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem iLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsrem ipsum"
+		},
+		{
+			"accordionTitle": "Healthcare",
+			"accordionImageSource": "../../_assets/Page2_Modul%201_Healthcare_Sector.png",
+			"accordionImageAlt": "Healthcare Sector",
+			"accordionText" : "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem iLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsrem ipsum ipsum"
+		},
+		{
+			"accordionTitle": "Infrastructure",
+			"accordionImageSource": "../../_assets/Page2_Modul%201_Infrastructure_Cities_Sector.png",
+			"accordionImageAlt": "Infrastructure Sector",
+			"accordionText" : "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem iLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsrem ipsum ipsum"
+		}
+	]
+
+}
